@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Joonis</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+        let joonis;
+	  function algus(){
+	    joonis = new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:[],
+			  datasets:[
+                {
+                    label: 'Mitu mitmetähelist sõna on',
+                    data:[],
+                    backgroundColor: 'yellow'
+                }
+        ]
+		   },
+           options: {
+               // et suur jääks paika
+               responsive: true,
+               maintainAspectRadio: false,
+
+               scales: {
+                   yAxes:[{
+                       ticks: {
+                           beginAtZero: true
+                       }
+                    }
+                   ]
+               }
+           }
+		})
+	  }
+      function vajutus1() {
+          let kast = kast1.value;
+          let sõnad = [];
+          let list = kast.split(' ');
+        //   joonis.data.labels=list;
+        //   joonis.data.datasets[0].data=list.map(function(sona) {return sona.length});
+          for ( let i = 0; i < list.length; i++) {
+            joonis.data.labels.push(list[i]);
+            joonis.data.datasets[0].data.push(list[i].length);
+
+          }
+          joonis.update();
+          
+        //   joonis.data.labels.push(kast1.value);
+        //   joonis.data.datasets[0].data.push(parseInt(kast2.value));
+        //   joonis.update();
+      }
+	</script>
+  </head>
+  <body onload="algus()">
+    <div style="width: 600px; height: 400px;">
+     <canvas id="joonisekiht" style="width: 400px; height:300px;"></canvas>
+    <br>
+    <input type="text" id="kast1" placeholder="lause">
+    <button type="button" value="Lisa" onclick="vajutus1()">Arvuta</button>
+</div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Joonis</title>
+	<script>
+        let t, g;
+       
+	   function algus(){
+	         t = document.getElementById("tahvel")
+             g = t.getContext("2d");
+             // html canvas funktsioonid loe täpsemalt pärast
+		   //g.fillStyle="green";
+           // pikkus laius kõrgus..
+		   //g.fillRect(10, 20, 30, 40);
+         
+		   //g.fillStyle="yellow";
+		   //g.fillRect(50, 20, 30, 40);
+        //    g.beginPath();
+        //    g.arc(100, 75, 50, 0, 2 * Math.PI);
+        //    g.stroke();
+
+		//    g.beginPath();
+		//    g.moveTo(100, 125);
+		//    g.lineTo(100, 200);
+        //    g.moveTo(100,200)
+		//    g.lineTo(200, 120);
+        //    g.moveTo(100,200)
+        //    g.lineTo(0, 120);
+        //    g.moveTo(200,500)
+        //    g.lineTo(100,200);
+        //    g.moveTo(0,600)
+        //    g.lineTo(100,200);
+		//    g.stroke();
+		   //g.beginPath();
+		   //g.fillStyle="white";
+		   //g.arc(25, 40, 10, 0, 6.28);
+		   //g.fill()
+	   }
+       function juku1() {
+        //let inputVal = document.getElementById("juku1").value;
+        
+           let juku = document.getElementById("juku1").value;
+    
+           g.clearRect(0,0,400,300);
+         
+           g.beginPath();
+           g.arc(100, 75, 50, 0, 2 * Math.PI);
+           g.fillStyle="yellow";
+           g.fill()
+           g.stroke();
+
+		   g.beginPath();
+		   g.moveTo(100, 125);
+		   g.lineTo(100, 200);
+           g.moveTo(100,200)
+		   g.lineTo(200, 120);
+           g.moveTo(100,200)
+           g.lineTo(0, 120);
+           g.moveTo(200,500)
+           g.lineTo(100,200);
+           g.moveTo(0,600)
+           g.lineTo(100,200);
+		   g.stroke();
+
+       }
+       function juku2() {
+        //let inputVal = document.getElementById("juku1").value;
+        
+        let juku = parseInt(document.getElementById("juku2").value);
+         
+        let keskP = 100 - juku;
+        
+        console.log(keskP);
+           g.clearRect(0,0,400,300);
+         
+           g.beginPath();
+           g.arc(100, 75, 50, 0, 2 * Math.PI);
+           g.stroke();
+
+		   g.beginPath();
+		   g.moveTo(100, 125);
+		   g.lineTo(100, 200);
+           g.moveTo(100,200)
+		   g.lineTo(200, 120);
+           g.moveTo(100,200)
+           g.lineTo(0, 120);
+           g.moveTo(200,500)
+           g.lineTo(100,200);
+           g.moveTo(0,600)
+           g.lineTo(100,200);
+		   g.stroke();
+
+       }
+	</script>
+  </head>
+  <body onload="algus()">
+    <canvas id="tahvel" width="400" height="300" /></canvas>
+    <label for="juku1">juku1</label>
+    <input type="number" id="juku1">
+    <button type="button" onclick="juku1()">joonista</button>
+    <label for="juku2">juku1</label>
+    <input type="number" id="juku2">
+    <button type="button" onclick="juku2()">joonista</button>
+    <label for="juku3">juku1</label>
+    <input type="number" id="juku3">
+    <button type="button" onclick="juku3()">joonista</button>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+Aasta	Sugu	Õppeliik	HT307: KÕRGHARIDUSEST VÄLJALANGENUD
+
+2014	Mehed	Rakenduskõrgharidusõpe	1681
+2014	Mehed	Bakalaureuseõpe	2160
+2014	Mehed	Integreeritud bakalaureuse- ja magistriõpe	209
+2014	Mehed	Magistriõpe	858
+2014	Mehed	Doktoriõpe	137
+2014	Naised	Rakenduskõrgharidusõpe	1423
+2014	Naised	Bakalaureuseõpe	2030
+2014	Naised	Integreeritud bakalaureuse- ja magistriõpe	144
+2014	Naised	Magistriõpe	1132
+2014	Naised	Doktoriõpe	138
+2015	Mehed	Rakenduskõrgharidusõpe	1652
+2015	Mehed	Bakalaureuseõpe	2040
+2015	Mehed	Integreeritud bakalaureuse- ja magistriõpe	241
+2015	Mehed	Magistriõpe	986
+2015	Mehed	Doktoriõpe	124
+2015	Naised	Rakenduskõrgharidusõpe	1433
+2015	Naised	Bakalaureuseõpe	1958
+2015	Naised	Integreeritud bakalaureuse- ja magistriõpe	157
+2015	Naised	Magistriõpe	1260
+2015	Naised	Doktoriõpe	163
+2016	Mehed	Rakenduskõrgharidusõpe	1370
+2016	Mehed	Bakalaureuseõpe	1890
+2016	Mehed	Integreeritud bakalaureuse- ja magistriõpe	154
+2016	Mehed	Magistriõpe	817
+2016	Mehed	Doktoriõpe	175
+2016	Naised	Rakenduskõrgharidusõpe	1189
+2016	Naised	Bakalaureuseõpe	1872
+2016	Naised	Integreeritud bakalaureuse- ja magistriõpe	146
+2016	Naised	Magistriõpe	1106
+2016	Naised	Doktoriõpe	180
+2017	Mehed	Rakenduskõrgharidusõpe	1247
+2017	Mehed	Bakalaureuseõpe	1574
+2017	Mehed	Integreeritud bakalaureuse- ja magistriõpe	187
+2017	Mehed	Magistriõpe	754
+2017	Mehed	Doktoriõpe	135
+2017	Naised	Rakenduskõrgharidusõpe	1047
+2017	Naised	Bakalaureuseõpe	1581
+2017	Naised	Integreeritud bakalaureuse- ja magistriõpe	172
+2017	Naised	Magistriõpe	978
+2017	Naised	Doktoriõpe	181
+2018	Mehed	Rakenduskõrgharidusõpe	1068
+2018	Mehed	Bakalaureuseõpe	1459
+2018	Mehed	Integreeritud bakalaureuse- ja magistriõpe	155
+2018	Mehed	Magistriõpe	787
+2018	Mehed	Doktoriõpe	145
+2018	Naised	Rakenduskõrgharidusõpe	901
+2018	Naised	Bakalaureuseõpe	1392
+2018	Naised	Integreeritud bakalaureuse- ja magistriõpe	150
+2018	Naised	Magistriõpe	964
+2018	Naised	Doktoriõpe	156
+2019	Mehed	Rakenduskõrgharidusõpe	1058
+2019	Mehed	Bakalaureuseõpe	1348
+2019	Mehed	Integreeritud bakalaureuse- ja magistriõpe	128
+2019	Mehed	Magistriõpe	707
+2019	Mehed	Doktoriõpe	124
+2019	Naised	Rakenduskõrgharidusõpe	1026
+2019	Naised	Bakalaureuseõpe	1262
+2019	Naised	Integreeritud bakalaureuse- ja magistriõpe	146
+2019	Naised	Magistriõpe	948
+2019	Naised	Doktoriõpe	143
+2020	Mehed	Rakenduskõrgharidusõpe	834
+2020	Mehed	Bakalaureuseõpe	1205
+2020	Mehed	Integreeritud bakalaureuse- ja magistriõpe	141
+2020	Mehed	Magistriõpe	667
+2020	Mehed	Doktoriõpe	106
+2020	Naised	Rakenduskõrgharidusõpe	814
+2020	Naised	Bakalaureuseõpe	1131
+2020	Naised	Integreeritud bakalaureuse- ja magistriõpe	116
+2020	Naised	Magistriõpe	827
+2020	Naised	Doktoriõpe	127

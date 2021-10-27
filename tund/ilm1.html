@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmaandmete tuvustus</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js" integrity="sha512-2iwCHjuj+PmdCyvb88rMOch0UcKQxVHi/gsAml1fN3eg82IDaO/cdzzeXX4iF2VzIIes7pODE1/G0ts3QBwslA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script>
+        let m;
+        fetch("harkutund.txt")
+        .then(yhendus => yhendus.text())
+        .then(sisu => {
+            //console.log(sisu)});
+            m=sisu.split("\n").map(rida=> rida.split(","));
+            m.shift(); // eemaldan pealkirja ria
+            let puuduvad = [];
+            let uued = [];
+            for(let i = 0; i < m.length; i++) {
+                m[i][0]=parseInt(m[i][0]);
+                m[i][1]=parseInt(m[i][1]);
+                m[i][2]=parseInt(m[i][2].split(":")[0]);
+                let puudu = false;
+                for(let j= 3; j<11; j++){
+                    m[i][j]=parseFloat(m[i][j]);
+                    if (isNaN(m[i][j])) {
+                        puudu=true;
+                    }
+                }
+                if(!puudu) {uued.push(m[i]);}
+            }
+            m=uued;
+            console.log(m);
+            console.log(puuduvad);
+            tootle();
+        });
+        function tootle() {
+            let temperatuurid=m.map(rida => rida[5]);
+            console.log(_.sum(temperatuurid));
+            console.log(_.sum(temperatuurid)/ temperatuurid.length);
+            console.log((_.sum(temperatuurid)/ temperatuurid.length).toFixed(2))
+            temperatuuridKuudeKaupa();
+        };
+
+        function temperatuuridKuudeKaupa() {
+           kt = _.range(13).map(element => []);
+           console.log(kt);
+           m.forEach(rida => kt[rida[0]].push(rida[5]));
+           ks = kt.map(kuu => _.sum(kuu))
+           kk = kt.map(kuu => _.sum(kuu)/ kuu.length);
+           console.log(kk);
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

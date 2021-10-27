@@ -1,0 +1,8 @@
+PR1H	Tunni sademete summa mm					
+RH1H	Tunni keskmine suhteline õhuniiskus %					
+TA1H	Tunni keskmine õhutemperatuur °C					
+TAN1H	Tunni miinimum õhutemperatuur °C					
+TAX1H	Tunni maksimum õhutemperatuur °C					
+WD1H	Tunni valdav tuule suund °					
+WS1H	Tunni keskmine tuule kiirus m/s					
+WSX1H	Tunni maksimum tuule kiirus m/s	
